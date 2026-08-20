@@ -1409,7 +1409,8 @@ function Portal(props: {
           </div>
           <button className="icon-btn" type="button" onClick={() => props.setLang(props.lang === "en" ? "mn" : "en")}>
             {props.lang === "en" ? "MN" : "EN"}
-          </button>
+        </button>
+
         </header>
         {props.page === "dashboard" ? <Dashboard {...props} /> : null}
         {props.page === "athletes" ? <AthletesPage {...props} /> : null}
